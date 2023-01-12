@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+      <HBox prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: black;">
+            <Label prefHeight="50.0" prefWidth="250.0" text="Libary System" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../icon.PNG" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <HBox prefHeight="32.0" prefWidth="350.0">
+                  <Button fx:id="btnLendingReceiving" mnemonicParsing="false" onAction="#onLendingReceivingButtonClick" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #D3D3D3; -fx-background-radius: 0;" text="Lending/Receiving" />
+                  <Button fx:id="btnCollections" mnemonicParsing="false" onAction="#onCollectionButtonClick" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #63666A; -fx-background-radius: 0;" text="Collection" />
+                  <Button fx:id="btnMembers" mnemonicParsing="false" onAction="#onMembersButtonClick" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: #63666A; -fx-background-radius: 0;" text="Members" />
+               <HBox.margin>
+                  <Insets top="30.0" />
+               </HBox.margin>
+            </HBox>
+      </HBox>
+</VBox>

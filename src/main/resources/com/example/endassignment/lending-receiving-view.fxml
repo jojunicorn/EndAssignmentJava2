@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.endassignment.LendingReceivingView">
+   <children>
+      <VBox prefHeight="270.0" prefWidth="280.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="lblWelcomeUser" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: #D3D3D3;" text="Welcome [Name of User]" textFill="#666666">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtitemCodeLend" promptText="Item code" style="-fx-border-color: #63666A;">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="txtmemberIdLend" promptText="Member identifier" style="-fx-border-color: #63666A;">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btnLendItem" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #4169E1;" text="Lend Item" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="270.0" prefWidth="280.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="txtItemCodeReceive" promptText="Item code" style="-fx-border-color: #63666A;">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="30.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btnReceiveItem" mnemonicParsing="false" prefWidth="100.0" style="-fx-background-color: #4169E1;" text="Receive Item" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="45.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
